@@ -1,0 +1,98 @@
+/*----------------------------------
+Table of Contents 
+1 - Block Element vs Inline Element 
+2 - Margins and Padding 
+3 - Marign Collapse 
+4 - Overflow 
+5 - Standard vs. Alternative Box Model 
+---------------------------------------*/ 
+* {
+  box-sizing:border-box;   
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+/* 1 Block Element vs Inline */
+/* block */ 
+main {
+    height: 400px; /* change height to 45px, what happens? */  
+    background-color: #BADA55; 
+    padding: 15px; 
+    margin: 10px; 
+    border: 5px solid #333;
+    /* overflow: scroll or hidden */ 
+}
+
+h1 {
+    background-color: #000; 
+    color: #fff; 
+    padding: 10px; 
+    margin: 15px; 
+}
+
+/* inline */ 
+span {
+    background-color: #C0FFEE; 
+    height: 100px;  
+    margin: 10px; 
+    padding: 10px; 
+    border: 2px solid orange; 
+    /*display: block;*/ 
+}
+
+
+
+
+/* 2 Margins + Padding */
+/*  try setting the margin, padding, border, height and width on p */
+
+p {
+    margin: 10px; 
+    padding: 25px; 
+    border: 2px solid red; 
+}
+
+
+/*set different margins, padding, borders on top, bottom, left and right on main element*/
+
+main {
+    /* can do different margins on top, left, right, bottom */ 
+    margin-top: 15px; 
+    margin-bottom: 20px;
+    margin-left: 5px; 
+    margin-right: 30px; 
+    /*shorthand */ 
+    margin: 15px 30px 20px 5px; 
+    padding-right: 10px; 
+    padding-left: 5px; 
+    padding-bottom: 90px; 
+    padding-top: 30px; 
+    /*shorthand */ 
+    padding: 30px 10px 90px 5px; 
+    border-style:dashed; 
+    border-width: 4px; 
+    border-color: purple; 
+    border: 4px dashed purple; 
+    border-left: 2px solid red; 
+    border-right: 5px solid orange; 
+    border-top: 10px dashed green; 
+    border-bottom: 20px dashed yellow; 
+}
+
+
+
+/* 3 - Margin Collapse */
+/*add another paragraph, set margin to see what happens. What did you expect? What happened?  */
+
+p + p {
+    margin-top: 30px; 
+}
+
+
+
+/* 5 - Standard Vs. Alternative Box Model  */
+/* return to main - what should the width and height be? what are they? */
