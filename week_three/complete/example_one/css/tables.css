@@ -1,8 +1,40 @@
 /* Styling Tables */
 /* Look at Default Styles - default styles for tables are not pretty */
 
+/* added border to demonstrate border-collapse: collapse */ 
+/*table, 
+tr, 
+td {
+    border: 1px solid #000; 
+}*/
+
+
 /* Spacing & Layout */
 
+table {
+    table-layout:fixed; 
+    width: 100%; 
+    border-collapse: collapse;
+    font-size: 1.4rem; 
+}
+
+/* now that we have a fixed table layout, we can set the column widths */ 
+thead th:nth-child(1) {
+    width: 40%; 
+}
+
+thead th:nth-child(2) {
+    width: 20%; 
+}
+
+thead th:nth-child(3) {
+    width: 40%; 
+}
+
+th, 
+td {
+    padding: 1.2em;
+}
 
 
 /* 
@@ -20,9 +52,25 @@
 
 /* Table Typography */
 
+thead th {
+    text-align:left; 
+    text-decoration: underline; 
+}
 
+
+thead th:nth-child(2), 
+thead th:nth-child(3) {
+    text-align:center; 
+}
+
+tfoot td {
+    font-size: 1.4rem; 
+    font-style: italic; 
+}
 
 /* Zebra Striping */
 
-
+tbody tr:nth-child(odd) {
+    background-color: #f2f1f1; 
+}
 

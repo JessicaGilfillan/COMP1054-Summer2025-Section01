@@ -3,25 +3,81 @@
 
 /* the form */
 
+form {
+    margin: 0 auto; 
+    background-color: #f5f5f5; 
+    padding: 1.5em 1em 1em 1em; 
+    width: 100%; 
+    font-size: 1.8rem; 
+}
 
-/* making sure the form is using the correct font with inherit */ 
+/* making sure the form is using the correct font with inherit */
+
+button, 
+input, 
+select, 
+textarea {
+    font-family: inherit; 
+    color: #333; 
+}
 
 
 /* styling fieldsets & legends */
 
+fieldset {
+    border: none; 
+    padding-bottom: 2rem; 
+}
 
+legend {
+    background-color: #333; 
+    color: #fff; 
+    font-size: 1.8rem; 
+    padding: 1rem; 
+    margin-bottom: 1.6rem; 
+}
 
-/* styling inputs and labels */
+input {
+    border: none; 
+    height: 4rem; 
+    margin-bottom: 1.5rem; 
+    border-radius: 5px; 
+    display: block; 
+    width: 100%; 
+    padding-left: 1rem; 
+}
 
+label, 
+p {
+    display: block; 
+    margin-bottom: 1.5rem; 
+}
 
-/* two column format */ 
+textarea {
+    display: block; 
+    border: none; 
+    border-radius: 5px; 
+    padding: 1rem; 
+    width: 100%; 
+    resize: none;
+    overflow: scroll; 
+    margin-bottom: 2rem; 
+}
 
+input[type="submit"] {
+    width: 25%; 
+    margin: 0 auto; 
+    background-color: #BADA55; 
+    color: #333; 
+    height: 5rem; 
+    text-align:center; 
+    padding-left: 0; 
+}
 
-/* styling textfields */ 
-
-
-
-/* submit button */ 
+input[type="submit"]:hover {
+    color: #BADA55;
+    background-color: #333
+}
 
 
 
@@ -29,7 +85,11 @@
 
 /* placeholders*/ 
 
-
+input::placeholder {
+    color: #999;
+    font-size: 1.6rem; 
+    opacity: 1; 
+}
 
 /* The Ugly * / 
 
