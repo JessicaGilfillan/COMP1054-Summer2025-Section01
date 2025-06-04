@@ -1,9 +1,3 @@
-/* 
-@font-face allows you to define custom fonts to use on your website.
-It links a font file hosted on your server or externally, so it can be used
-in your CSS styles, even if the user's device doesn't have the font installed.
-*/
-
 @font-face {
     font-family: 'open_sansregular';
     src: url('OpenSans-Regular-webfont.eot');
@@ -15,6 +9,13 @@ in your CSS styles, even if the user's device doesn't have the font installed.
     font-weight: normal;
     font-style: normal;
 }
+
+/* 
+@font-face allows you to define custom fonts to use on your website.
+It links a font file hosted on your server or externally, so it can be used
+in your CSS styles, even if the user's device doesn't have the font installed.
+*/
+
 
 /* General Styles */
 
